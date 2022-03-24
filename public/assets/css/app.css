@@ -49,3 +49,10 @@ nav {
 	font-size: 2.2rem;
 	color: #fff;
 }
+
+/* public/assets/css/app.css */
+
+.input-field span.error {
+    color: #e04447;
+    font-size: 12px;
+}
