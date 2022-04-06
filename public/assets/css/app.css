@@ -50,9 +50,26 @@ nav {
 	color: #fff;
 }
 
+textarea.materialize-textarea {
+	min-height: 10rem;
+}
+
 /* public/assets/css/app.css */
 
 .input-field span.error {
     color: #e04447;
     font-size: 12px;
+}
+
+span.badge {
+	font-size: 12px;
+	color: #fff;
+}
+
+span.badge.success {
+	background-color:#65bdf0;
+}
+
+table td a {
+	color: #000;
 }
