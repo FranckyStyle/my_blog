@@ -128,9 +128,15 @@ class BlogController extends AbstractController
         ]);
     }
 
-    public function remove($id)
+    public function remove(Article $article)
     {
-        return new Response('<h1>Supprimer l\'article ' .$id. '</h1>');
+        $this->denyAccessUnlessGranted('ROLE_ADMIN');
+
+        $em = $this->getDoctrine()->getManager();
+        $em->remove($article);
+        $em->flush();
+
+        return $this->redirectToRoute('admin');
     }
 
 
